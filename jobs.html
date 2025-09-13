@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job Portal - Jobs</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Job Portal</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="jobs">
+    <h2>Available Jobs</h2>
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="Search jobs...">
+    </div>
+    <div class="jobs-grid" id="jobsGrid"></div>
+    <div id="noJobs" class="no-jobs" style="display:none">No Jobs found</div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Job Portal</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="jobModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalCompany"></p>
+      <p id="modalLocation"></p>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <script src="js/jobs.js"></script>
+</body>
+</html>
